@@ -45,6 +45,10 @@ body{
     background-color: var(--v-bkg-color1);
 
 }
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
 /* H E A D E R  */
 header{
     display:flex;
@@ -53,12 +57,14 @@ header{
     width:1000px;
     margin:0 auto;
     align-items: center;
+    z-index: 20;
 }
 header h1{
     font-weight: 800;
 }
 
 .menu ul{
+    
     list-style: none;
 }
 .menu li{
@@ -151,7 +157,7 @@ main h3{
 }
 .pic img{
     position:relative;
-    margin: 301px -65px 0px;
+    margin-bottom: -301px;
     z-index: 4;
 }
 .losango{
@@ -592,6 +598,32 @@ main h3{
     display: inline-block;
     margin: -399px 486px -115px;
 }
+#mais{
+    text-align: right;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+.mais-body{
+    background-color: #1d212a;
+    background-image: none;
+}
+.mais-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.mais-container img{
+    width: 300px;
+    height: 300px;
+    padding:5px;
+    
+}
+.mais-body h2{
+    margin: 1.5rem;
+    border-bottom: 1px solid #00adb4;
+}
+
 
 
 /* C O N T A C T   M E  */
@@ -618,7 +650,7 @@ main h3{
     position: relative;
     font-weight: 600;
     text-align: center;
-    margin-top: -168px;
+    margin-top: 155px;
     z-index: 10;
 }
 .contact-title h2{
@@ -635,21 +667,19 @@ main h3{
     text-shadow: 2px 2px 6px rgb(22, 22, 22);
 }
 .contact img{
-    position:absolute;
-    display:inline;
-    margin:0 auto;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
     width: 412px;
     height: 327px;
-    top:-2rem;
-    left:33vw;
 }
 
 .contact-email{
     display: flex;
     margin: 0 auto;
     position: relative;
-    left: -33px;
-    top: -43px;
+    left: -25px;
+    top: -199px;
     width: 200px;
 }
 .contact-email p{
@@ -674,7 +704,7 @@ main h3{
     margin: 0 auto;
     position: relative;
     left: -23px;
-    top: -17px;
+    top: -153px;
     width: 200px;
 }
 .contact-phone img{
